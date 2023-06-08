@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Front end assignment </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Assignment task</h2>
+        <div id="blockcontainer" class="blockcontainer">
+            <div id="draggable-1" class="example-draggable" draggable="true" ondragstart="drag(event)">
+                item 1
+            </div>
+            <div id="draggable-2" class="example-draggable" draggable="true" ondragstart="drag(event)">
+                item 2
+            </div>
+            <div id="draggable-3" class="example-draggable" draggable="true" ondragstart="drag(event)">
+                item 3
+            </div>
+            <div id="draggable-4" class="example-draggable" draggable="true" ondragstart="drag(event)">
+                item 4
+            </div>
+        </div>
+        <div class="flex">
+            <div id="getData" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <button id="resetButton" onclick="resetContainers()">Reset</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

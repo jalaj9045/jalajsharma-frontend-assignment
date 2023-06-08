@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.blockcontainer {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.example-draggable {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    background-color: crimson;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#getData {
+    width: 100%;
+    height: 30vh;
+    padding: 10px;
+    border: 2px solid crimson;
+    overflow-y: auto;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px 0px;
+    background-color: green;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#resetButton {
+    width: 100%;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: green;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+    border: 2px solid green;
+}
+
+#resetButton:hover {
+    background-color: green;
+    color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+}
